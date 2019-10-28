@@ -15,3 +15,5 @@ print_r($_FILES);
 print "</pre>";
 
 ?>
+
+<p><a href="index.php">BACK</p>
