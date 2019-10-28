@@ -1,10 +1,6 @@
 <?php
 
-//unlink('test.html');
-//echo $_POST['image'];
-
-echo '<pre>';
-print_r($_POST);
-echo '<pre>';
+unlink($_GET['image_id']);
+echo $_GET['image_id']." Was deleted!";
 
  ?>
