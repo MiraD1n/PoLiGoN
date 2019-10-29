@@ -37,7 +37,7 @@ echo '<form enctype="multipart/form-data" name="upload_bage" id="upload_bage" ac
 
 //****************
 
-echo '<p><a href="test.php">SHOW BAGE</p>';
+//echo '<p><a href="test.php">SHOW BAGE</p>';
 
 ?>
 
