@@ -3,7 +3,7 @@ $uploaddir = './';
 $uploadfile = $uploaddir . basename($_FILES['userfile']['name']);
 move_uploaded_file($_FILES['userfile']['tmp_name'], $uploadfile);
 
-/**************WORK
+/************** Елси не загружается включить эту отладочную информацию
 echo '<pre>';
 if (move_uploaded_file($_FILES['userfile']['tmp_name'], $uploadfile)) {
     echo "Файл корректен и был успешно загружен.\n";
@@ -15,7 +15,7 @@ echo 'Некоторая отладочная информация:';
 print_r($_FILES);
 
 print "</pre>";
-************WORK*/
+************отладка*/
 
 //*****************************************************************************
 
