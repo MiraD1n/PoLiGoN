@@ -34,6 +34,7 @@ list($width, $height) = getimagesize($filename1);
 $new_width = $width;
 $new_height = $height;
 
+<<<<<<< HEAD
 //Изменение размера входящего изображения
 list($width_2, $height_2) = getimagesize($filename2);
 $new_width_income = '393';
@@ -46,6 +47,12 @@ imagecopyresampled($image_poligon, $image_income, 0, 0, 0, 0, $new_width_income,
 //$image_p = imagecreatetruecolor($new_width, $new_height);
 $image = imagecreatefrompng($filename1);
 $image_p = $image_poligon;
+=======
+// ресэмплирование
+//$image_p = imagecreatetruecolor($new_width, $new_height);
+$image = imagecreatefrompng($filename1);
+$image_p = imagecreatefrompng($filename2);
+>>>>>>> 8a9a92ed5e8fc406b4b9d58860ed74f0c93d6d35
 imagecopyresampled($image_p, $image, 0, 0, 0, 0, $new_width, $new_height, $width, $height);
 
 // вывод
@@ -53,9 +60,12 @@ imagejpeg($image_p, null, 100);
 
 imagejpeg($image_p, "test.png", 100);
 //*****************************************************************************
+<<<<<<< HEAD
 
 //удаляет загружаемый файл, оставляя бейдж
 unlink($filename2);
+=======
+>>>>>>> 8a9a92ed5e8fc406b4b9d58860ed74f0c93d6d35
 
 ?>
 
