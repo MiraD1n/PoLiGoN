@@ -22,4 +22,7 @@ imagecopyresampled($image_p, $image, 0, 0, 0, 0, $new_width, $new_height, $width
 // вывод
 imagejpeg($image_p, null, 100);
 
+imagejpeg($image_p, "test.png", 100);
+
+
 ?>
