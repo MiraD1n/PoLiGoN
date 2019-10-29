@@ -34,10 +34,18 @@ list($width, $height) = getimagesize($filename1);
 $new_width = $width;
 $new_height = $height;
 
+//Изменение размера входящего изображения
+list($width_2, $height_2) = getimagesize($filename2);
+$new_width_income = '393';
+$new_height_income = '435';
+$image_poligon = imagecreatetruecolor($new_width_income, $new_height_income);
+$image_income = imagecreatefrompng($filename2);
+imagecopyresampled($image_poligon, $image_income, 0, 0, 0, 0, $new_width_income, $new_height_income, $width_2, $height_2);
+
 // ресэмплирование
 //$image_p = imagecreatetruecolor($new_width, $new_height);
 $image = imagecreatefrompng($filename1);
-$image_p = imagecreatefrompng($filename2);
+$image_p = $image_poligon;
 imagecopyresampled($image_p, $image, 0, 0, 0, 0, $new_width, $new_height, $width, $height);
 
 // вывод

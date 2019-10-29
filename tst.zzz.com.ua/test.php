@@ -14,8 +14,8 @@ list($width, $height) = getimagesize($filename1);
 $new_width = $width;
 $new_height = $height;
 
+
 // ресэмплирование
-//$image_p = imagecreatetruecolor($new_width, $new_height);
 $image = imagecreatefrompng($filename1);
 $image_p = imagecreatefrompng($filename2);
 imagecopyresampled($image_p, $image, 0, 0, 0, 0, $new_width, $new_height, $width, $height);
@@ -23,6 +23,7 @@ imagecopyresampled($image_p, $image, 0, 0, 0, 0, $new_width, $new_height, $width
 // вывод
 imagejpeg($image_p, null, 100);
 
+// сохранение изображения
 imagejpeg($image_p, "test.png", 100);
 
 // освобождение памяти
