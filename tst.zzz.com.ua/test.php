@@ -36,9 +36,9 @@ echo $width.'</br>';
 echo $height.'</br>';*/
 
 
-//*********************
+//********************* WORK CHANGE SIZE
+/*
 // файл
-function changesize($img){
   $filename = 'banan.png';
   $percent = 0.5;
 
@@ -58,8 +58,6 @@ function changesize($img){
   // вывод
   imagejpeg($image_p, null, 100);
 
-  imagejpeg($image_p, "test.png", 100);
-
-}
-
+  imagejpeg($image_p, "banan.png", 100);
+*/
 ?>
