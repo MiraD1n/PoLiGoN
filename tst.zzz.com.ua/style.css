@@ -8,6 +8,7 @@ overflow-x: scroll; /* прокрутка по горизонтали */
 overflow-y: scroll; /* прокрутка по вертикали */
 }
 .sign {
+border: 4px double black;
 float: left; /* Выравнивание по правому краю */
 /*border: 1px solid #333; /* Параметры рамки */
 padding: 7px; /* Поля внутри блока */
